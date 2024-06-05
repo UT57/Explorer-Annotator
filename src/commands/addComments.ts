@@ -21,7 +21,7 @@ export function registerAddCommentsCommand(context: vscode.ExtensionContext, fil
                 return;
             }
             comment = userComment;
-            addCommentToFile(filePath, comment);  // Добавляем комментарий в файл
+            addCommentToFile(filePath, comment);  // Добаление комментария в файл
         } else {
             const userComment = await vscode.window.showInputBox({ prompt: 'Edit your annotation', value: comment });
             if (!userComment) {
@@ -29,7 +29,7 @@ export function registerAddCommentsCommand(context: vscode.ExtensionContext, fil
                 return;
             }
             comment = userComment;
-            addCommentToFile(filePath, comment);  // Обновляем комментарий в файле
+            addCommentToFile(filePath, comment);  // Обновления комментария в файле
         }
 
         fileProvider.addFile(filePath, comment);

@@ -7,7 +7,6 @@ export function addCommentToFile(filePath: string, comment: string) {
     const fileExtension = path.extname(filePath).substring(1);
     let commentSyntax: string;
 
-    // Определите синтаксис комментариев для различных языков
     switch (fileExtension) {
         case 'py':
             commentSyntax = `# ${comment}`;
