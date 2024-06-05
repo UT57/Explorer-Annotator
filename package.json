@@ -42,6 +42,10 @@
     "lint": "eslint src --ext ts",
     "test": "vscode-test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UT57/Explorer-Annotator.git"
+  },
   "devDependencies": {
     "@types/chai": "^4.3.16",
     "@types/mocha": "^10.0.6",
