@@ -12,15 +12,15 @@
   "activationEvents": [
     "onCommand:fileExplorer.refreshEntry",
     "onCommand:explorer-annotator.addComments"
-],
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "views": {
       "explorer": [
-          {
-            "id": "fileExplorer",
-            "name": "File Explorer"
-          }
+        {
+          "id": "fileExplorer",
+          "name": "File Explorer"
+        }
       ]
     },
     "commands": [
@@ -43,6 +43,7 @@
     "test": "vscode-test"
   },
   "devDependencies": {
+    "@types/chai": "^4.3.16",
     "@types/mocha": "^10.0.6",
     "@types/node": "^18.19.34",
     "@types/vscode": "^1.89.0",
@@ -50,7 +51,10 @@
     "@typescript-eslint/parser": "^7.11.0",
     "@vscode/test-cli": "^0.0.9",
     "@vscode/test-electron": "^2.4.0",
+    "chai": "^5.1.1",
     "eslint": "^8.57.0",
+    "glob": "^10.4.1",
+    "mocha": "^10.4.0",
     "typescript": "^5.4.5"
   }
 }
